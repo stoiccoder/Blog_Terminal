@@ -8,7 +8,7 @@ class Database(object):
     @staticmethod
     def initialize():
         client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client["feb17"]
+        Database.DATABASE = client["feb17"]             #Replace "feb17" with your database name.
 
     @staticmethod
     def find_one(collection, query):
